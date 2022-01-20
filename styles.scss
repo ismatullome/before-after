@@ -1,5 +1,5 @@
-$image: 635px;
-
+$image: 835px;
+$height: 524px;
 * {
   margin: 0;
   padding: 0;
@@ -15,13 +15,15 @@ body {
 }
 
 .box {
-  width: 635px;
-  height: 424px;
+  width: 855px;
+  height: 544px;
   position: relative;
-  background-color: #222;
+  border: solid 10px #333;
+  border-radius: 20px;
+  background-color: #333;
   &__slider--before {
     width: $image / 2;
-    height: 424px;
+    height: $height;
     position: absolute;
     z-index: 4;
     background-repeat: no-repeat;
@@ -31,7 +33,7 @@ body {
   }
   &__slider--after {
     width: $image;
-    height: 424px;
+    height: $height;
     position: absolute;
     z-index: 3;
     background-repeat: no-repeat;
